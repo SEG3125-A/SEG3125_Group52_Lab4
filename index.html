@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stylish Strokes Barbershop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#home" style="font-family: cursive;">Stylish Strokes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services and Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#booking">Book Appointment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="hero bg-pink text-white text-center">
+    <div class="hero-content">
+        <div class="slogan">
+            <h1 class="display-4" style="font-family: cursive;">Welcome to Stylish Strokes!</h1>
+            <p class="lead">Your premier destination for a perfect cut</p>
+        </div>
+        <div class="address">
+            <p>123 Main Street, Cityville, California, USA</p>
+        </div>
+    </div>
+</header>
+
+<!-- Centered logo image -->
+<div class="logo-container" style="text-align: center; margin-top: 90px;">
+    <img src="images/Logo.png" alt="Stylish Strokes Logo" style="max-width: 350px;" class="logo-image"> <!-- Adjust max-width as needed -->
+</div>
+
+  
+<!-- Services Section -->
+<section id="services" class="my-5">
+    <div class="container">
+        <br>
+        <h2 class="text-center mb-3">Our Services and Staff</h2>
+        <h4 class="text-left mb-4">Here are our services:</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service text-center border rounded p-3">
+                    <h4 class="font-weight-bold">Haircut</h4>
+                    <p>A classic haircut tailored to your preferences and style.</p>
+                    <p class="font-italic">Price: $20</p>
+                </div>
+                <br>
+                <img src="images/short.png" alt="Short Haircut" class="img-fluid mb-2 small-image">
+                <img src="images/long.png" alt="Long Haircut" class="img-fluid mb-2 small-image">
+            </div>
+            <div class="col-md-4">
+                <div class="service text-center border rounded p-3">
+                    <h4 class="font-weight-bold">Drying</h4>
+                    <p>A professional hair drying service to complement your haircut.</p>
+                    <p class="font-italic">Price: $10</p>
+                </div>
+                <br>
+                <img src="images/drying.png" alt="Drying Hair" class="img-dry mb-2">
+            </div>
+            <div class="col-md-4">
+                <div class="service text-center border rounded p-3">
+                    <h4 class="font-weight-bold">Coloring</h4>
+                    <p>Transform your hair with our expert coloring techniques.</p>
+                    <p class="font-italic">Price: $30</p>
+                </div>
+                <br>
+                <img src="images/colour.png" alt="Hair Coloring" class="img-fluid mb-2 small-image">
+                <img src="images/red.png" alt="Red Hair Coloring" class="img-fluid mb-2 small-image">
+            </div>
+        </div>
+
+        <!-- Barbers Section -->
+        <h4 class="text-left mt-5 mb-4">Meet our barbers:</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="barber text-center mb-4">
+                    <img src="images/Laura.png" alt="Laura" class="img-fluid rounded-circle mb-3" style="width: 210px;">
+                    <h4 class="font-weight-bold">Laura</h4>
+                    <p>Laura is a highly experienced barber with a passion for creating unique hairstyles that suit your personality.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="barber text-center mb-4">
+                    <img src="images/Jonah.png" alt="Jonah" class="img-fluid rounded-circle mb-3" style="width: 215px;">
+                    <h4 class="font-weight-bold">Jonah</h4>
+                    <p>Jonah is a skilled barber known for his attention to detail and ability to bring out the best in your hair.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="booking" class="my-5">
+    <div class="container">
+        <br>
+      <h2 class="text-center mb-3">Book Your Appointment</h2>
+      <form id="booking-form">  
+        <!-- Date and Time Selection -->
+        <div class="form-group">
+          <label for="date-input">Date:</label>
+          <input type="date" id="date-input" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="time-input">Time:</label>
+          <input type="time" id="time-input" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+            <label for="service-select">Choose a Service:</label>
+            <select id="service-select" class="form-control" required>
+              <option value="">Select a service...</option>
+              <option value="haircut">Haircut - $20</option>
+              <option value="drying">Drying - $10</option>
+              <option value="coloring">Coloring - $30</option>
+            </select>
+          </div>
+
+        <div class="form-group">
+            <label for="barber-select">Choose Your Barber:</label>
+            <select id="barber-select" class="form-control" required>
+              <option value="">Select a barber...</option>
+              <option value="Laura">Laura</option>
+              <option value="Jonah">Jonah</option>
+            </select>
+          </div>
+  
+        <!-- Personal Information Fields -->
+        <div class="form-group">
+          <label for="name-input">Your Name:</label>
+          <input type="text" id="name-input" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email-input">Email Address:</label>
+          <input type="email" id="email-input" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone-input">Phone Number:</label>
+          <input type="tel" id="phone-input" class="form-control" placeholder="Enter your phone number">
+        </div>
+  
+        <!-- Submission Button -->
+        <button type="submit" class="btn btn-primary">Book Appointment</button>
+      </form>
+    </div>
+    <br>
+  </section>
+  
+<!-- Contact Section -->
+<section id="contact" class="my-5">
+    <div class="container">
+      <br>
+      <h2 class="text-center mb-3">Get In Touch</h2>
+      <div class="row">
+        <div class="contact-info">
+          <p><strong>Address:</strong> 123 Main Street, Cityville, California, USA</p>
+          <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p><strong>Email:</strong> info@stylishstrokes.com</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/stylishstrokes" target="_blank">@stylishstrokes</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="text-dark text-center p-3 custom-footer">
+    <p>Stylish Strokes Barbershop &copy; 2024</p>
+  </footer>
+  
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
